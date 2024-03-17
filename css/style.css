@@ -102,6 +102,7 @@ header {
     margin: 0 auto;
     width: 80%;
     color: #2b2020;
+
 }
 .child_anasayfa {
     flex-basis: 31%;
@@ -132,14 +133,22 @@ header {
 .inner_projects {
     display: table;
     justify-content: space-between;
-    margin: 100px;
-    padding: 80px;
+    margin: auto;
+    
     width: 80%;
     color: #2b2020;
     align-items: normal;
+    outline: 10px ridge rgba(170, 50, 220, .6);
+    border-radius: 2rem;
 }
 .innerprojects_child {
     flex-basis: 31%;
+
+}
+.inner_projects h2 {
+    font-size: 50px;
+    color: #e0376f;
+   
 }
 
 .Cube_Runner_Merger {
@@ -278,11 +287,13 @@ header {
 .inner_career {
     display: flex;
     justify-content: space-evenly;
-    margin: 100px;
+    margin: auto;
     padding: 80px;
     width: 80%;
     color: #fff;
     align-items: normal;
+    outline: 10px ridge rgba(170, 50, 220, .6);
+    border-radius: 2rem;
 }
 
 .inner_career {
@@ -300,11 +311,13 @@ header {
 .inner_skills {
     display: flex;
     justify-content: space-evenly;
-    margin: 100px;
+    margin: auto;
     padding: 80px;
     width: 80%;
     color: #fff;
     align-items: normal;
+    outline: 10px ridge rgba(170, 50, 220, .6);
+    border-radius: 2rem;
 }
 
 .inner_skills {
@@ -325,11 +338,13 @@ header {
 .inner_certifications {
     display: flex;
     justify-content: space-evenly;
-    margin: 100px;
+    margin: auto;
     padding: 80px;
     width: 80%;
     color: #fff;
     align-items: normal;
+    outline: 10px ridge rgba(170, 50, 220, .6);
+    border-radius: 2rem;
 }
 
 .inner_certifications {
@@ -349,3 +364,37 @@ header {
     margin: 50px;
     padding: 17px;
 }
+
+
+/*about*/
+
+
+.inner_about {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 80px;
+    width: 80%;
+    color: #fff;
+    align-items: normal;
+    outline: 10px ridge rgba(170, 50, 220, .6);
+    border-radius: 2rem;
+}
+
+.inner_about {
+    flex-basis: 31%;
+}
+
+.child_about h1 {
+    font-size: 40px;
+    color: #e0376f;
+    position: relative;
+    margin: 20px;
+}
+.child_about a {
+    font-size: 40px;
+   
+    position: relative;
+    margin: 20px;
+}
+
