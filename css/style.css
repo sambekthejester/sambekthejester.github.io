@@ -83,17 +83,23 @@ header {
     
 }
 
-.nav_links li a {
-    margin-left:15px;
-    color:#fff;
-    padding:5px 15px;
-    border-radius:5px;
-    transition:all .5s ease-in-out;
-
-}
+    .nav_links li a {
+        font-size: 20px;
+        margin-left: 15px;
+        color: #ff9400;
+        font-style: oblique;
+        padding: 5px 15px;
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+    }
     .nav_links li a:hover {
         background: #24CAAC;
     }
+   
+
+        .nav_links li p:hover {
+            background: #24CAAC;
+        }
 
         /*home*/
 
@@ -150,7 +156,14 @@ header {
 .inner_projects h2 {
     font-size: 50px;
     color: #e0376f;
+    display:none;
    
+}
+.inner_projects h1 {
+    font-size: 50px;
+    color: #e0376f;
+    position: relative;
+    margin-top:-20px;
 }
 
 .Cube_Runner_Merger {
@@ -165,10 +178,7 @@ header {
 
 
 .Cube_Runner_Merger h1 {
-    font-size: 50px;
-    color: #e0376f;
-    
-    position: relative;
+   
 }
 .imgs {
     justify-content: space-around;
@@ -324,7 +334,7 @@ header {
     justify-content: space-evenly;
     margin: auto;
     padding: 80px;
-    width: 80%;
+    width: 60%;
     color: #fff;
     align-items: normal;
     outline: 10px ridge rgba(170, 50, 220, .6);
