@@ -15,25 +15,7 @@ html{
 
 
 style.css
-/*
-body {
-    font-family: "Kaushan Script", cursive;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #080808;
-}
 
-h1 {
-    color: #808482;
-    font-size: 120px;
-}
-
-p {
-    color: #808482;
-    font-size: 16px;
-    line-height: 1.5;
-}
-*/
 img {
     width: 100%;
 }
@@ -67,7 +49,9 @@ header {
     width: 100%;
     z-index: 5;
 }
-
+#menu_bar{
+    display:none;
+}
 .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -136,7 +120,38 @@ header {
     }
 
         /*projects*/
+.navbar_projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 0;
+}
 
+.nav_linksprojects {
+    display: flex;
+}
+
+    .nav_linksprojects li a {
+        font-size: 20px;
+        margin-left: 15px;
+        color: #ff9400;
+        font-style: oblique;
+        padding: 5px 15px;
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+    }
+
+        .nav_linksprojects li a:hover {
+            background: #24CAAC;
+        }
+
+
+    .nav_linksprojects li p:hover {
+        background: #24CAAC;
+    }
 
 .inner_projects {
     display: table;
@@ -156,8 +171,7 @@ header {
 .inner_projects h2 {
     font-size: 50px;
     color: #e0376f;
-    display:none;
-   
+    color:rgba(238,238,238,0);
 }
 .inner_projects h1 {
     font-size: 50px;
@@ -307,24 +321,28 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: auto;
-    padding: 80px;
+    margin: 100px auto;
+    padding: 90px 200px;
     width: 80%;
     color: #fff;
-    align-items: normal;
+    align-items: center;
     outline: 10px ridge rgba(170, 50, 220, .6);
     border-radius: 2rem;
 }
 
-.inner_career {
-    flex-basis: 31%;
+.child_career {
+    flex-basis: 70%;
 }
-.child_career h1 {
-    font-size: 30px;
-    color: #e0376f;
-    position: relative;
-    margin: 50px;
-}
+    .child_career h1 {
+        font-size: 45px;
+        color: #e0376f;
+        margin: 80px auto;
+    }
+    .child_career h2 {
+        font-size: 30px;
+        color: #e0376f;
+        margin: 80px auto;
+    }
 
 /*skills*/
 
@@ -341,8 +359,8 @@ header {
     border-radius: 2rem;
 }
 
-.inner_skills {
-    flex-basis: 31%;
+.child_skills {
+    flex-basis: 40%;
 }
 
     .inner_skills h1 {
@@ -361,31 +379,31 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
-    padding: 80px;
-    width: 80%;
+    padding: 150px 50px;
+    width: 90%;
     color: #fff;
     align-items: normal;
     outline: 10px ridge rgba(170, 50, 220, .6);
     border-radius: 2rem;
 }
 
-.inner_certifications {
+.child_certifications {
     flex-basis: 31%;
 }
 
 .infos h1 {
+    font-size: 45px;
+    color: #e0376f;
+    margin-bottom: 50px;
+}
+.infos h2 {
     font-size: 30px;
     color: #e0376f;
-    position: relative;
-    margin: 50px;
+    margin-bottom: 50px;
 }
-.dates h1 {
-    font-size: 30px;
-    color: #e0376f;
-    position: relative;
-    margin: 50px;
-    padding: 17px;
-}
+ 
+
+
 
 
 /*about*/
@@ -405,13 +423,13 @@ header {
     border-radius: 2rem;
 }
 
-.inner_about {
+.child_about {
     flex-basis: 31%;
 }
 
 
     .child_about h1 {
-        font-size: 40px;
+        font-size: 80px;
         margin: 80px;
         color: #e0376f;
         position: relative;
@@ -422,20 +440,24 @@ header {
         margin: 80px;
         position: relative;
     }
-.child_about a {
-    display: flex;
-    justify-content: space-between;
-    font-size: 40px;
-    margin: 0;
-    padding: 10%;
-    position: relative;
-    border: 2px solid rgba(170, 50, 220, .6);
-    border-radius: 10px;
-}
+    .child_about a {
+        display: flex;
+        justify-content: space-between;
+        font-size: 80px;
+        font-style: oblique;
+        margin: auto;
+        padding: 20px 50px;
+        position: relative;
+        color: #00efff;
+    }
     .child_about a:hover {
         
         border: 2px solid #ebf751;
        
+    }
+    .child_about.Gmail {
+        display: grid;
+        justify-content: space-between;
     }
     .child_about.tel {
         display: grid;
