@@ -21,8 +21,9 @@ img {
 }
 
 section {
-    padding: 300px 0;
+    padding: 300px 100px;
     background: #080808;
+    width:100%;
 }
 .section_title{
    margin-bottom:30px;
