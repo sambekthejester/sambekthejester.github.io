@@ -198,7 +198,7 @@ header {
 .imgs {
     justify-content: space-around;
     margin: auto;
-     
+    width: 20%;
 }
 .shot_merge_Hypercasual {
     display: flex;
@@ -218,6 +218,7 @@ header {
 .imgs1 {
     justify-content: space-around;
     margin: auto;
+    width: 20%;
 }
 
 .Runner {
@@ -238,6 +239,7 @@ header {
 .imgs2 {
     justify-content: space-around;
     margin: auto;
+    width: 20%;
 }
 .Akademi-U14-Gamejam {
     display: flex;
@@ -257,6 +259,7 @@ header {
 .imgs3 {
     justify-content: space-around;
     margin: auto;
+    width: 50%;
 }
 .adventure_platformer {
     display: flex;
@@ -276,6 +279,7 @@ header {
 .imgs4 {
     justify-content: space-around;
     margin: auto;
+    width: 50%;
 }
 .platformer {
     display: flex;
@@ -295,6 +299,7 @@ header {
 .imgs5 {
     justify-content: space-around;
     margin: auto;
+    width: 50%;
 }
 .basic_arcade {
     display: flex;
@@ -314,6 +319,7 @@ header {
 .imgs6 {
     justify-content: space-around;
     margin: auto;
+    width: 50%;
 }
 
 /*career*/
