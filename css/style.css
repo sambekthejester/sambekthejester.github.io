@@ -185,7 +185,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 300px;
+    margin: 10%;
     width: 80%;
     color: #2b2020;
 }
@@ -204,7 +204,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 300px;
+    margin: 10%;
     width: 80%;
     color: #2b2020;
 }
@@ -224,7 +224,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 300px;
+    margin: 10%;
     width: 80%;
     color: #2b2020;
 }
@@ -243,7 +243,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 300px;
+    margin: 10%;
     width: 80%;
     color: #2b2020;
 }
@@ -262,7 +262,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 300px;
+    margin: 10%;
     width: 80%;
     color: #2b2020;
 }
@@ -281,7 +281,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 300px;
+    margin: 10%;
     width: 80%;
     color: #2b2020;
 }
@@ -300,7 +300,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 300px;
+    margin: 10%;
     width: 80%;
     color: #2b2020;
 }
@@ -323,7 +323,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 100px auto;
-    padding: 90px 200px;
+    padding: 90px 20%;
     width: 80%;
     color: #fff;
     align-items: center;
@@ -417,7 +417,7 @@ header {
     justify-content: center;
     margin: auto;
     padding: 100px;
-    width: 50%;
+    width: 70%;
     color: #fff;
     align-items: center;
     outline: 10px ridge rgba(170, 50, 220, .6);
@@ -431,23 +431,24 @@ header {
 
     .child_about h1 {
         font-size: 80px;
-        margin: 80px;
+        margin: 10% auto;
         color: #e0376f;
         position: relative;
     }
     .child_about img {
         display: flex;
         justify-content: space-between;
-        margin: 80px;
+        margin: 20%;
         position: relative;
+        width: 30%;
     }
     .child_about a {
         display: flex;
         justify-content: space-between;
         font-size: 80px;
         font-style: oblique;
-        margin: auto;
-        padding: 20px 50px;
+        margin: 10% auto;
+        padding: 20px 20px;
         position: relative;
         color: #00efff;
     }
@@ -459,10 +460,12 @@ header {
     .child_about.Gmail {
         display: grid;
         justify-content: space-between;
+        margin: 10% auto;
     }
     .child_about.tel {
         display: grid;
         justify-content: space-between;
+        margin: 10% auto;
     }
 
 

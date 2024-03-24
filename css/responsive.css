@@ -1,5 +1,20 @@
- @media screen and (max-width:770px) {
-    .navbar{
+ @media screen and (max-width:1300px) {
+    section {
+        padding: 300px 0 ;
+        background: #080808;
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .section_title {
+        margin-bottom: 30px;
+    }
+        .section_title h2 {
+           
+            font-size: 40px;
+            
+        }
+     .navbar{
         width:90%
     }
 
@@ -57,7 +72,7 @@
 
     .child_home {
         flex-basis: 100%;
-        margin: 50px;
+        margin: 20%;
         align-items:center;
     }
 
@@ -108,7 +123,7 @@
         flex-direction: column;
         width: 100%;
         
-        align-items: center;
+       
         outline: none;
     }
     innerprojects_child {
@@ -135,23 +150,25 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: auto;
-        margin-top: 100px;
+        margin: 0;
+        margin-top: 50px;
         width: 100%;
         color: #2b2020;
     }
 
     .imgs {
         justify-content: center;
-        margin: auto;
+        margin: 0;
+        padding: 50px;
+        object-fit: contain;
     }
 
     .shot_merge_Hypercasual {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: auto;
-        margin-top: 100px;
+        margin: 0;
+        margin-top: 50px;
         width: 100%;
         color: #2b2020;
     }
@@ -160,15 +177,17 @@
 
     .imgs1 {
         justify-content: center;
-        margin: auto;
+        margin: 0;
+        padding: 50px;
+        object-fit: contain;
     }
 
     .Runner {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: auto;
-        margin-top: 100px;
+        margin: 0;
+        margin-top: 50px;
         width: 100%;
         color: #2b2020;
     }
@@ -177,15 +196,17 @@
 
     .imgs2 {
         justify-content: center;
-        margin: auto;
+        margin: 0;
+        padding: 0;
+        object-fit: contain;
     }
 
     .Akademi-U14-Gamejam {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: auto;
-        margin-top: 100px;
+        margin: 0;
+        margin-top: 50px;
         width: 100%;
         color: #2b2020;
     }
@@ -194,15 +215,17 @@
 
     .imgs3 {
         justify-content: center;
-        margin: auto;
+        margin: 0;
+        padding: 5px;
+        object-fit: contain;
     }
 
     .adventure_platformer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: auto;
-        margin-top: 100px;
+        margin: 0;
+        margin-top: 50px;
         width: 100%;
         color: #2b2020;
     }
@@ -211,15 +234,17 @@
 
     .imgs4 {
         justify-content: center;
-        margin: auto;
+        margin: 0;
+        padding: 5px;
+        object-fit: contain;
     }
 
     .platformer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: auto;
-        margin-top: 100px;
+        margin: 0;
+        margin-top: 50px;
         width: 100%;
         color: #2b2020;
     }
@@ -228,15 +253,17 @@
 
     .imgs5 {
         justify-content: center;
-        margin: auto;
+        margin: 0;
+        padding: 5px;
+        object-fit: contain;
     }
 
     .basic_arcade {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: auto;
-        margin-top: 100px;
+        margin: 0;
+        margin-top: 50px;
         width: 100%;
         color: #2b2020;
     }
@@ -245,7 +272,10 @@
 
     .imgs6 {
         justify-content: center;
-        margin: auto;
+        margin: 0;
+        padding: 0;
+        object-fit: contain;
+        width: 100%;
     }
 
     /*career*/
@@ -347,13 +377,13 @@
 
     .child_about {
         flex-basis: 100%;
-        margin: 20px 0;
+        margin: 5% 0;
     }
 
 
         .child_about h1 {
-            font-size: 40px;
-            margin: 20px 10px;
+            font-size: 8vw;
+            margin: 5% 0 5% 0;
             color: #e0376f;
             position: relative;
         }
@@ -361,7 +391,7 @@
     .child_about img {
         display: flex;
         justify-content: space-between;
-        margin: 80px;
+       
         position: relative;
     }
 
@@ -371,23 +401,26 @@
             font-size: 40px;
             margin: 0;
             font-style: oblique;
-            position: relative;
+            text-decoration-line:underline; 
+                position: relative;
+                width:70%;
+            padding: 0;
         }
 
         .child_about a:hover {
             border: 2px solid #ebf751;
         }
         .child_about.Gmail {
-            font-size: 40px;
-            margin: auto 80px;
+            font-size: 20px;
+            width: 70%;
+            margin: auto 0;
             color: #e0376f;
             position: relative;
-          
         }
 
         .child_about.tel {
-            font-size: 40px;
-            margin: auto 80px;
+            font-size: 20px;
+            margin: auto 0;
             color: #e0376f;
             position: relative;
             padding: 0;
