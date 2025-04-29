@@ -6,13 +6,12 @@
     --bg-color: #080808;
     --text-color: #f0f0f0;
     --link-color: #00efff;
-    
-  
 }
+
 html {
     scroll-behavior: smooth;
-  }
-  
+}
+
 /* ... önceki stiller aynı kalır ... */
 
 /* Gallery Grid */
@@ -23,6 +22,10 @@ html {
     margin-top: 40px;
     cursor: pointer;
 }
+.gallery-grid a {
+    text-decoration: none;
+    color: inherit;
+}
 
 .gallery-item {
     position: relative;
@@ -32,10 +35,17 @@ html {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
     cursor: pointer;
+    box-shadow: 0 0 20px #ff9400;
 }
-.gallery-item.img {
-object-fit: contain;
-}
+
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* veya contain */
+        display: block;
+        border-radius: 10px;
+    }
 
 
 .main-media img,
@@ -54,20 +64,20 @@ object-fit: contain;
     justify-content: center;
 }
 
-.thumbnails img,
-.thumbnails video {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
+    .thumbnails img,
+    .thumbnails video {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: transform 0.3s;
+    }
 
-.thumbnails img:hover,
-.thumbnails video:hover {
-    transform: scale(1.1);
-}
+        .thumbnails img:hover,
+        .thumbnails video:hover {
+            transform: scale(1.1);
+        }
 
 
 
@@ -88,12 +98,32 @@ object-fit: contain;
     opacity: 0;
     transition: opacity 0.3s ease;
     text-align: center;
-
 }
+
+.overlaythumb {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+     
+    background: rgba(0, 0, 0, 0.6); /* Yarı saydam siyah zemin */
+    color: white;
+   
+     
+    text-align: center;
+    box-sizing: border-box;
+  
+}
+.overlaythumb h3 {
+    font-size: 1rem;
+    
+}
+
+
 
 .gallery-item:hover .overlay {
     opacity: 0.9;
-
+    
 }
 
 .overlay h3 {
@@ -102,7 +132,6 @@ object-fit: contain;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .right-buttons {
@@ -119,7 +148,6 @@ object-fit: contain;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .btn-small {
@@ -128,7 +156,6 @@ object-fit: contain;
     color: #fff;
     cursor: pointer;
     margin: auto;
-
 }
 
 .skills-grid {
@@ -139,21 +166,20 @@ object-fit: contain;
     padding: 0;
 }
 
-.skills-grid h3 {
-    color: var(--accent-color);
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    text-align: center;
-}
+    .skills-grid h3 {
+        color: var(--accent-color);
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
 
-.skills-grid ul {
-    padding-left: 20px;
-    list-style: none;
-    line-height: 1.8;
-    text-align: center;
-    padding: 0;
-
-}
+    .skills-grid ul {
+        padding-left: 20px;
+        list-style: none;
+        line-height: 1.8;
+        text-align: center;
+        padding: 0;
+    }
 
 
 .text-placeholder {
@@ -165,7 +191,6 @@ object-fit: contain;
     justify-content: center;
     align-items: center;
     text-align: center;
-
     font-size: 1rem;
     font-weight: 600;
     transition: transform 0.4s ease;
@@ -196,40 +221,40 @@ body {
     overflow-x: hidden;
 }
 
-body.light-theme {
-    --bg-color: #f9f9f9;
-    --text-color: #111;
-    --primary-color: #0054a6;
-    --accent-color: #e67e22;
-    --link-color: #007acc;
-}
+    body.light-theme {
+        --bg-color: #f9f9f9;
+        --text-color: #111;
+        --primary-color: #0054a6;
+        --accent-color: #e67e22;
+        --link-color: #007acc;
+    }
 
-body.light-theme header {
-    background: #ffffff;
-}
+        body.light-theme header {
+            background: #ffffff;
+        }
 
-body.light-theme .project-card {
-    background: #ffffff;
-}
+        body.light-theme .project-card {
+            background: #ffffff;
+        }
 
-body.light-theme footer {
-    background: #eeeeee;
-    color: #555;
-}
+        body.light-theme footer {
+            background: #eeeeee;
+            color: #555;
+        }
 
-body.light-theme .project-card p {
-    color: #333;
-}
+        body.light-theme .project-card p {
+            color: #333;
+        }
 
-body.light-theme .contact p,
-body.light-theme .contact a {
-    color: var(--text-color);
-}
+        body.light-theme .contact p,
+        body.light-theme .contact a {
+            color: var(--text-color);
+        }
 
-body.light-theme .gallery-item:hover .overlay {
-    background: rgba(238, 246, 255, 0.95);
-    /* daha açık bir overlay */
-}
+        body.light-theme .gallery-item:hover .overlay {
+            background: rgba(238, 246, 255, 0.95);
+            /* daha açık bir overlay */
+        }
 
 
 
@@ -265,21 +290,21 @@ header {
     gap: 20px;
 }
 
-.nav-links li a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s;
-}
+    .nav-links li a {
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s;
+    }
 
-.nav-links li a.active {
-    color: var(--accent-color);
-    border-bottom: 2px solid var(--accent-color);
-}
+        .nav-links li a.active {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+        }
 
-.nav-links li a:hover {
-    color: var(--accent-color);
-}
+        .nav-links li a:hover {
+            color: var(--accent-color);
+        }
 
 /* Mobile Menu */
 .menu-toggle {
@@ -289,14 +314,14 @@ header {
     z-index: 1001;
 }
 
-.menu-toggle span {
-    height: 3px;
-    width: 25px;
-    background: var(--text-color);
-    margin: 4px 0;
-    border-radius: 5px;
-    transition: 0.3s;
-}
+    .menu-toggle span {
+        height: 3px;
+        width: 25px;
+        background: var(--text-color);
+        margin: 4px 0;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
 
 .nav-links.active {
     position: fixed;
@@ -353,13 +378,13 @@ body.light-theme .nav-links li a {
     color: var(--text-color);
 }
 
-body.light-theme .nav-links li a:hover,
-body.light-theme .nav-links li a.active {
-    color: var(--accent-color);
-    border-bottom: 2px solid var(--accent-color);
-    transform: translateY(-3px);
-    transition: transform 0.3s ease, color 0.3s ease;
-}
+    body.light-theme .nav-links li a:hover,
+    body.light-theme .nav-links li a.active {
+        color: var(--accent-color);
+        border-bottom: 2px solid var(--accent-color);
+        transform: translateY(-3px);
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
 
 body.light-theme .menu-toggle:hover span {
     background: var(--accent-color);
@@ -375,7 +400,7 @@ body.light-theme .menu-toggle span {
     background: #000;
 }
 
- 
+
 
 .logo {
     display: flex;
@@ -390,6 +415,7 @@ body.light-theme .menu-toggle span {
 .logo-text {
     display: inline;
 }
+
 .logo-img {
     display: none;
     width: 80px;
@@ -403,6 +429,7 @@ body.light-theme .menu-toggle span {
     .logo-text {
         display: none;
     }
+
     .logo-img {
         display: block;
     }
@@ -449,17 +476,16 @@ body.light-theme .menu-toggle span {
     transition: background 0.3s;
 }
 
-.btn:hover {
-    background: var(--primary-color);
-    color: #fff;
-}
+    .btn:hover {
+        background: var(--primary-color);
+        color: #fff;
+    }
 
 
 /* Section */
 .section {
     min-height: 100vh;
     padding: 50px 0;
-
 }
 
 
@@ -499,28 +525,28 @@ h3 {
     transition: transform 0.3s;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-}
+    .project-card:hover {
+        transform: translateY(-5px);
+    }
 
-.project-card img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
+    .project-card img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
 
-.project-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    color: var(--accent-color);
-}
+    .project-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        color: var(--accent-color);
+    }
 
-.project-card p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-    color: #ccc;
-    transition: color 0.3s;
-}
+    .project-card p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+        color: #ccc;
+        transition: color 0.3s;
+    }
 
 .btn-small {
     background: var(--primary-color);
@@ -532,10 +558,10 @@ h3 {
     font-weight: 600;
 }
 
-.btn-small:hover {
-    background: var(--accent-color);
-    color: #000;
-}
+    .btn-small:hover {
+        background: var(--accent-color);
+        color: #000;
+    }
 
 /* Contact 
 .contact p,
@@ -548,7 +574,6 @@ h3 {
 
 .contact a {
     color: var(--link-color);
-
 }
 
 .about-grid {
@@ -655,9 +680,9 @@ footer {
         border-radius: 8px;
     }
 
-    .nav-links.active {
-        display: flex;
-    }
+        .nav-links.active {
+            display: flex;
+        }
 
     .menu-toggle {
         display: flex;
@@ -667,9 +692,9 @@ footer {
         transition: all 0.3s ease;
     }
 
-    .nav-links li a {
-        transition: color 0.3s, border-bottom 0.3s, transform 0.3s;
-    }
+        .nav-links li a {
+            transition: color 0.3s, border-bottom 0.3s, transform 0.3s;
+        }
 
 
 
@@ -692,7 +717,6 @@ footer {
         align-items: center;
         justify-content: center;
         gap: 6px;
-
         color: #fff;
         padding: 10px 20px;
         border-radius: 8px;
@@ -706,27 +730,27 @@ footer {
     }
 
 
-    .about-btn img {
-        width: 100px;
-        height: 100px;
-        object-fit: contain;
-    }
+        .about-btn img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
 
 
-    .about-btn:hover {
-        background-color: var(--accent-color);
-        color: #000;
-    }
+        .about-btn:hover {
+            background-color: var(--accent-color);
+            color: #000;
+        }
 
-    /* Pasif butonlar için */
-    .about-btn.no-link {
-        background-color: #333;
-        cursor: default;
-        font-size: 1rem;
-        width: 100%;
-        max-width: 160px;
-        height: 80px;
-    }
+        /* Pasif butonlar için */
+        .about-btn.no-link {
+            background-color: #333;
+            cursor: default;
+            font-size: 1rem;
+            width: 100%;
+            max-width: 160px;
+            height: 80px;
+        }
 
     /* Light tema için */
     body.light-theme.about-btn {
@@ -734,19 +758,13 @@ footer {
         color: #000;
     }
 
-    body.light-theme.about-btn:hover {
-        background-color: var(--primary-color);
-        color: #fff;
-    }
+        body.light-theme.about-btn:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
 
-    body.light-theme.about-btn.no-link {
-        background-color: #ddd;
-        color: #333;
-
-    }
-
-
-
-
-
+        body.light-theme.about-btn.no-link {
+            background-color: #ddd;
+            color: #333;
+        }
 }
