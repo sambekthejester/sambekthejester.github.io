@@ -10,682 +10,159 @@
 </head>
 
 <body>
-    <header>
-        <nav class="container nav">
-            <a href="#home" class="logo">
-                <span class="logo-text">Samed Bekmez</span>
-                <img class="logo-img" src="img/jestersvision_logo.png" alt="Logo" />
-            </a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
 
-            <div class="right-buttons">
-                <button id="theme-toggle" class="btn-small">Toggle Theme</button>
-                <div class="menu-toggle" id="mobile-menu">
-                    <span></span><span></span><span></span>
-                </div>
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="social-left">
+                <a href="https://linkedin.com/in/samed-bekmez-343425153" target="_blank">
+                    <img src="img/logos/LI-In-Bug.png" alt="LinkedIn" />
+                </a>
+
+                <a href="mailto:hbekmez81@gmail.com">hbekmez81@gmail.com</a>
             </div>
-        </nav>
 
+            <div class="site-info">
+                <h1 class="site-title">Samed Bekmez</h1>
+                <p class="site-subtitle">Game Developer | Unity & C#</p>
+            </div>
+
+            <div class="social-right">
+
+                <span>+90 507 490 9598</span>
+                <a href="https://github.com/sambekthejester" target="_blank">
+                    <img src="img/logos/GitHub-Mark-ea2971cee799.png" alt="GitHub" />
+                </a>
+
+            </div>
+        </div>
     </header>
 
-    <section id="home" class="hero container">
-        <div class="hero-text">
 
-            <h1>Samed Bekmez</h1>
-            <p> Game Developer | Unity & C# </p>
-            <a href="https://github.com/sambekthejester?tab=repositories" class="btn" target="_blank">View Projects</a>
+    <!-- MAIN SECTION -->
+    <main class="container main-section">
+        <div class="about-project-wrapper">
 
-            <a href="cv/Samed_Bekmez_CV.pdf" class="btn" target="_blank">Download CV</a>
-        </div>
-        <div class="hero-img">
-            <img src="img/jestersvision_logo.png" alt="Samed Bekmez Logo" />
-        </div>
-    </section>
+            <!-- LEFT: ABOUT -->
+            <section class="about-section">
+                <h2>About Me</h2>
+                <p>
+                    Game developer with a strong foundation in <strong class="highlight">Unity 2D/3D</strong>,
+                    specializing in <strong class="highlight">gameplay mechanics</strong>,
+                    <strong class="highlight">visual enhancement</strong>, and
+                    <strong class="highlight">performance optimization</strong>.
+                    Experienced in <strong class="highlight">Shader Graph</strong>,
+                    <strong class="highlight">URP</strong>, and
+                    <strong class="highlight">Unity Timeline</strong> to build high-fidelity scenarios
+                    for real-time rendering and <strong class="highlight">AI model training</strong>.
+                </p>
 
-    <section id="projects" class="section">
+                <p>
+                    Owned end-to-end development of complex workflows involving <strong class="highlight">procedural map
+                        generation</strong>,
+                    height map-based terrain, multi-camera setups, and <strong class="highlight">spline-based
+                        systems</strong>.
+                    Built <strong class="highlight">custom inspectors</strong>, <strong class="highlight">shader-driven
+                        visuals</strong>,
+                    and <strong class="highlight">mesh vertex manipulation</strong> using tools like
+                    Polybrush, ProBuilder, and VertexHelper.
+                </p>
+
+                <p>
+                    Integrated Unity Recorder, cinematic scene logic, and <strong
+                        class="highlight">post-processing</strong> pipelines
+                    including <strong class="highlight">multi-pass rendering</strong> and
+                    <strong class="highlight">URP effects</strong>.
+                    Worked with Unity URP Water System ,
+                    decal projector,
+                    <strong class="highlight">IK systems, Mecanim, and custom animations
+                        for both humanoid and non-humanoid rigs.</strong>
+                </p>
+
+                <p>
+                    Built a <strong class="highlight">Python-based server–client system</strong> using sockets and
+                    <strong class="highlight">FFmpeg</strong> to stream via <strong class="highlight">NGINX
+                        RTMP</strong>, synchronized with OBS.
+                    Produced outputs such as Excel logs, <strong class="highlight">data streams</strong>, and
+                    high-quality render videos.
+                </p>
+
+                <p>
+                    Known for <strong class="highlight">clean, scalable C# code</strong> and a
+                    <strong class="highlight">cross-disciplinary mindset</strong>—blending real-time graphics,
+                    networking, automation, and procedural systems.
+                    Passionate about exploring emerging tools and building
+                    <strong class="highlight">systems-driven gameplay experiences</strong>.
+                </p>
+            </section>
+
+
+            <!-- RIGHT: PYRAMID IMAGES + MODAL -->
+            <section class="visual-section">
+                <div class="pyramid-wrapper">
+
+                    <div class="pyramid-top">
+                        <div class="pyramid-image-wrapper" data-project="project1">
+                            <img src="img/Realistic/thumb.JPG" alt="Project 1" class="pyramid-img pyramid-img-top" />
+                            <div class="pyramid-overlay">Synthetic Visual Data</div>
+                        </div>
+                    </div>
+
+                    <div class="pyramid-bottom">
+                        <div class="pyramid-image-wrapper" data-project="project2">
+                            <img src="img/Cube_Runner_Merger/thumb.JPG" alt="Project 2"
+                                class="pyramid-img pyramid-img-bot" />
+                            <div class="pyramid-overlay">Cube Runner Merger</div>
+                        </div>
+
+                        <div class="pyramid-image-wrapper" data-project="project3">
+                            <img src="img/Akademi-U14-Gamejam/thumb.JPG" alt="Project 3"
+                                class="pyramid-img pyramid-img-bot" />
+                            <div class="pyramid-overlay">Gamejam - Arcanum</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            <div class="section-buttons">
+                <button class="tab-button" data-target="projects-panel">Projects</button>
+                <button class="tab-button" data-target="certificates-panel">Certificates</button>
+                <button class="tab-button" data-target="skills-panel">Skills</button>
+            </div>
+
+            </section>
+
+
+
+
+
+            <!-- FOOTER SECTIONS -->
+            <!-- SECTION BUTTONS -->
+
+
+
+    </main>
+    <section id="projects-panel" class="content-panel">
         <div class="container">
             <h2 class="section-title">Projects</h2>
-            <div class="gallery-grid">
-
-                <!-- Synthetic Visual Data Generation -->
-                <div class="gallery-item">
-
-                    <img src="img/Realistic/thumb.JPG" alt="Realistic" />
-
-
-                    <div class="overlaythumb">
-                        <h3>Synthetic Visual Data Generation</h3>
-
-
-                    </div>
-                    <div class="overlay">
-
-
-                    </div>
-
-                </div>
-                <!--
-                <!-- Frog Feed Order -->
-                <!--
-                 <div class="gallery-item">
-                    <img src="img/Cube_Runner_Merger/thumb.JPG" alt="Frog Feed Order" />
-
-                    <div class="overlaythumb">
-                        <h3>Frog Feed Order</h3>
-
-                    </div>
-                    <div class="overlay">
-
-
-                    </div>
-                </div>
-
-
-                <!-- Cube Runner Merger -->
-                <div class="gallery-item">
-                    <img src="img/Cube_Runner_Merger/thumb.JPG" alt="Cube Runner Merger" />
-
-                    <div class="overlaythumb">
-                        <h3>Cube Runner Merger</h3>
-
-
-                    </div>
-                    <div class="overlay">
-
-
-                    </div>
-                </div>
-
-                <!-- Shot Merge Hypercasual -->
-                <div class="gallery-item">
-                    <img src="img/shot_merge_Hypercasual/thumb.JPG" alt="Shot Merge Hypercasual" />
-                    <div class="overlaythumb">
-                        <h3>Shot Merge Hypercasual</h3>
-
-                    </div>
-                    <div class="overlay">
-
-
-                    </div>
-                </div>
-
-                <!-- Runner -->
-                <div class="gallery-item">
-
-                    <img src="img/Runner/thumb.JPG" alt="Runner" />
-                    <div class="overlaythumb">
-                        <h3>Runner</h3>
-
-                    </div>
-                    <div class="overlay">
-
-
-                    </div>
-                </div>
-
-                <!-- Arcanum (GameJam) -->
-                <div class="gallery-item">
-
-                    <img src="img/Akademi-U14-Gamejam/thumb.JPG" alt="Akademi U14 Gamejam" />
-                    <div class="overlaythumb">
-                        <h3>Akademi U14 Gamejam</h3>
-
-                    </div>
-                    <div class="overlay">
-
-
-                    </div>
-                </div>
-
-                <!-- Adventure Platformer -->
-                <div class="gallery-item">
-
-                    <img src="img/2d_adventure_platformer/thumb.JPG" alt="Adventure Platformer" />
-                    <div class="overlaythumb">
-                        <h3>Adventure Platformer</h3>
-
-                    </div>
-                    <div class="overlay">
-
-
-                    </div>
-                </div>
-
-                <!-- Platformer -->
-                <div class="gallery-item">
-                    <img src="img/2d_platformer/thumb.JPG" alt="Platformer" />
-                    <div class="overlaythumb">
-                        <h3>Platformer</h3>
-
-                    </div>
-                    <div class="overlay">
-
-
-                    </div>
-                </div>
-
-                <!-- Basic Arcade -->
-                <div class="gallery-item">
-                    <img src="img/2d_basic_arcade/thumb.JPG" alt="Basic Arcade" />
-                    <div class="overlaythumb">
-                        <h3>Basic Arcade</h3>
-
-                    </div>
-                    <div class="overlay">
-                         
-
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-        <!-- Modal for Project Details -->
-        <!-- Modal for Project Details -->
-        <div id="project-modal" class="modal hidden">
-            <div class="modal-content">
-
-                <span class="close-modal">&times;</span>
-
-                <div id="modal-body">
-
-                    <!-- Seçili büyük medya burada gösterilecek -->
-                    <img id="main-display" src="" alt="Main Media" />
-                    <!-- Eğer video olacaksa burayı dinamik değiştireceğiz -->
-                </div>
-
-                <div class="thumbnails" id="thumbnails-container">
-                    <!-- Thumbnail'lar buraya JavaScript ile eklenecek -->
-                </div>
-            </div>
-        </div>
-
-
-        <style>
-            .modal {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0, 0, 0, 0.8);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 1000;
-            }
-
-                .modal.hidden {
-                    display: none;
-                }
-
-            .modal-content {
-                background: #fff;
-                padding: 30px;
-                border-radius: 10px;
-                max-width: 800px;
-                width: 90%;
-                max-height: 90vh;
-                overflow-y: auto;
-                position: relative;
-            }
-
-                .modal-content video,
-                .modal-content img {
-                    max-width: 100%;
-                    margin-bottom: 15px;
-                }
-
-                .modal-content h3 {
-                    margin-bottom: 10px;
-                    color: #333;
-                }
-
-                .modal-content p {
-                    color: #555;
-                }
-
-            .close-modal {
-                position: absolute;
-                top: 10px;
-                right: 20px;
-                font-size: 2rem;
-                color: #000;
-                cursor: pointer;
-            }
-
-            body.light-theme .modal-content {
-                background: #fff;
-                color: #000;
-            }
-        </style>
-
-        <script>
-            document.querySelectorAll('.gallery-item').forEach(item => {
-                item.addEventListener('click', () => {
-                    const modal = document.getElementById('project-modal');
-                    const modalBody = document.getElementById('modal-body');
-                    const projectName = item.querySelector('h3')?.innerText || 'Project';
-
-                    modalBody.innerHTML = `
-                  <h3>${projectName}</h3>
-                   <p>${project.description}</p>
-                  ${item.querySelector('img') ? item.querySelector('img').outerHTML : ''}
-                  ${item.querySelector('video') ? item.querySelector('video').outerHTML : ''}
-                `;
-
-                    modal.classList.remove('hidden');
-                });
-            });
-
-            document.querySelector('.close-modal').addEventListener('click', () => {
-                document.getElementById('project-modal').classList.add('hidden');
-            });
-
-            window.addEventListener('click', (e) => {
-                const modal = document.getElementById('project-modal');
-                if (e.target === modal) {
-                    modal.classList.add('hidden');
-                }
-            });
-        </script>
-        <script>
-            const projects = {
-                "Synthetic Visual Data Generation": {
-                    description: "Designed realistic virtual scenarios within the Unity engine to support computer vision model training.",
-
-                    github: "https://github.com/sambekthejester/TerrainGeneration",  // ← buraya
-
-                    media: [
-
-                        "img/Realistic/iter_1.mp4",
-
-                        "img/Realistic/iter_1_box.mp4",
-
-                        "img/Realistic/iter_5 (withHorse).mp4",
-
-                        "img/Realistic/iter_5_box.mp4"
-
-                    ],
-                },
-
-                /*
-                "Frog Feed Order": {
-                    description: "Available on Google Play. A hypercasual merge-runner game where players combine cubes and navigate obstacles.",
-                    github: "https://github.com/sambekthejester/realistic-data-generation",  // ← buraya
-                    media: [
-
-                        "img/Cube_Runner_Merger/photo_2.jpg",
-                        "img/Cube_Runner_Merger/photo_3.jpg",
-                        "img/Cube_Runner_Merger/photo_4.jpg",
-                        "img/Cube_Runner_Merger/photo_5.jpg",
-                        "img/Cube_Runner_Merger/photo_6.jpg",
-                        "img/Cube_Runner_Merger/photo_7.jpg",
-                        "img/Cube_Runner_Merger/photo_8.jpg",
-                        "img/Cube_Runner_Merger/photo_9.jpg",
-                        "img/Cube_Runner_Merger/photo_10.jpg",
-                        "img/Cube_Runner_Merger/photo_11.jpg"
-                    ],
-
-                },
-                */
-                "Cube Runner Merger": {
-                    description: "Available on Google Play. A hypercasual merge-runner game where players combine cubes and navigate obstacles.",
-                    github: "https://github.com/sambekthejester/Cube_Runner_Merger",  // ← buraya
-
-                    media: [
-
-                        "img/Cube_Runner_Merger/photo_2.jpg",
-                        "img/Cube_Runner_Merger/photo_3.jpg",
-                        "img/Cube_Runner_Merger/photo_4.jpg",
-                        "img/Cube_Runner_Merger/photo_5.jpg",
-                        "img/Cube_Runner_Merger/photo_6.jpg",
-                        "img/Cube_Runner_Merger/photo_7.jpg",
-                        "img/Cube_Runner_Merger/photo_8.jpg",
-                        "img/Cube_Runner_Merger/photo_9.jpg",
-                        "img/Cube_Runner_Merger/photo_10.jpg",
-                        "img/Cube_Runner_Merger/photo_11.jpg"
-                    ],
-
-                },
-                "Shot Merge Hypercasual": {
-                    description: "A prototype developed for a job interview. Includes shooting and merging mechanics.",
-
-                    github: "https://github.com/sambekthejester/shot_merge_Hypercasual",  // ← buraya
-
-                    media: [
-                        "img/shot_merge_Hypercasual/photo_1.jpg",
-                        "img/shot_merge_Hypercasual/photo_2.jpg",
-                        "img/shot_merge_Hypercasual/photo_3.jpg",
-                        "img/shot_merge_Hypercasual/photo_4.jpg",
-                        "img/shot_merge_Hypercasual/photo_5.jpg",
-                        "img/shot_merge_Hypercasual/photo_6.jpg",
-                        "img/shot_merge_Hypercasual/photo_7.jpg"
-                    ]
-                },
-                "Runner": {
-                    description: "A basic runner mechanic demo developed as an exercise.",
-
-                    github: "https://github.com/sambekthejester/Runner",  // ← buraya
-
-                    media: [
-
-                        "img/Runner/runner (2).mp4"
-                    ]
-                },
-                "Akademi U14 Gamejam": {
-                    description: "Google Game & App Academy Gamejam submission: Arcanum.",
-                    github: "https://github.com/sambekthejester/Bootcamp_U17",  // ← buraya
-
-                    media: [
-
-                        "img/Akademi-U14-Gamejam/arcanum.mp4"
-                    ]
-                },
-                "Adventure Platformer": {
-                    description: "A 2D platformer exercise focused on character movement, environment and game flow.",
-                    github: "https://github.com/sambekthejester/2d_adventure_platformer",  // ← buraya
-
-                    media: [
-
-                        "img/2d_adventure_platformer/movie_001 (3).mp4",
-
-                        "img/2d_adventure_platformer/movie_002 (1).mp4",
-
-                        "img/2d_adventure_platformer/movie_003 (1).mp4"
-                    ]
-                },
-                "Platformer": {
-                    description: "A platformer prototype with level design and obstacle mechanics.",
-
-                    github: "https://github.com/sambekthejester/2d_platformer",  // ← buraya
-
-                    media: [
-                        "img/2d_platformer/2d_platformer.png",
-
-                        "img/2d_platformer/2d_platformer_1.mp4",
-
-                        "img/2d_platformer/2d_platformer_2.mp4",
-
-                        "img/2d_platformer/2d_platformer_3.mp4",
-
-                        "img/2d_platformer/2d_platformer_4.mp4",
-
-                        "img/2d_platformer/2d_platformer_5.mp4"
-                    ]
-                },
-                "Basic Arcade": {
-                    description: "A basic arcade-style 2D game exercise including shooting and scoring.",
-
-                    github: "https://github.com/sambekthejester/2d_basic_arcade",  // ← buraya
-
-                    media: [
-
-                        "img/2d_basic_arcade/2d_basic_arcade_2.png",
-                        "img/2d_basic_arcade/2d_basic_arcade_1.png",
-
-                        "img/2d_basic_arcade/2d_basic_arcade_3.png",
-
-                        "img/2d_basic_arcade/2d_basic_arcade.mp4"
-                    ]
-                }
-            };
-
-            document.querySelectorAll('.gallery-item').forEach(item => {
-                item.addEventListener('click', (event) => {
-                    event.preventDefault();
-
-                    const projectName = item.querySelector('h3')?.innerText;
-                    const project = projects[projectName];
-                    if (!project) return;
-
-                    const modal = document.getElementById('project-modal');
-                    const modalBody = document.getElementById('modal-body');
-
-                    // --- 1) Önce Modal Body'yi oluştur ---
-                    modalBody.innerHTML = `
-
-          <h3 style="text-align: center;">${projectName}</h3>
-          ${project.github ? `
-            <div style="text-align: center; margin-top: 8px;">
-              <a href="${project.github}" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: Black;">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width:24px; height:24px;">
-                <span style="font-size: 0.95rem;">View on GitHub</span>
-              </a>
-            </div>` : ''}
-          <p style="margin-top: 20px;">${project.description}</p>
-          <div class="main-media" style="margin-bottom:20px;"></div>
-          <div id="thumbnails-container" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;"></div>
-`;
-
-
-
-
-
-                    // --- 2) Sonra o iç elementleri yakala ---
-                    const mainDisplayContainer = modalBody.querySelector('.main-media');
-                    const thumbnailsContainer = modalBody.querySelector('#thumbnails-container');
-
-                    // --- 3) İlk medya elemanını göster ---
-                    const firstMedia = project.media.find(m => !m.includes('video'));
-                    const firstSrc = firstMedia || project.media[0];
-
-                    if (firstSrc.endsWith('.mp4') || firstSrc.endsWith('.webm')) {
-                        mainDisplayContainer.innerHTML = `<video id="main-display" controls autoplay muted src="${firstSrc}" style="width:100%; max-height:70vh; border-radius:8px;"></video>`;
-                    } else {
-                        mainDisplayContainer.innerHTML = `<img id="main-display" src="${firstSrc}" alt="Main Media" style="width:100%; max-height:70vh; border-radius:8px;">`;
-                    }
-
-                    // --- 4) Thumbnail'ları oluştur ---
-                    project.media.forEach(src => {
-                        let thumb;
-                        if (src.endsWith('.mp4') || src.endsWith('.webm')) {
-                            thumb = document.createElement('video');
-                            thumb.src = src;
-                            thumb.muted = true;
-                            thumb.loop = true;
-                            thumb.autoplay = false;
-
-                            thumb.style.width = "100px";
-                            thumb.style.height = "70px";
-                            thumb.style.objectFit = "cover";
-                        } else {
-                            thumb = document.createElement('img');
-                            thumb.src = src;
-                            thumb.style.width = "100px";
-                            thumb.style.height = "70px";
-                            thumb.style.objectFit = "cover";
-                        }
-                        thumb.classList.add('thumb');
-                        thumb.style.cursor = "pointer";
-
-                        thumb.addEventListener('click', () => {
-                            if (src.endsWith('.mp4') || src.endsWith('.webm')) {
-                                mainDisplayContainer.innerHTML = `<video id="main-display" controls autoplay muted src="${src}" style="width:100%; max-height:70vh; border-radius:8px;"></video>`;
-                            } else {
-                                mainDisplayContainer.innerHTML = `<img id="main-display" src="${src}" alt="Main Media" style="width:100%; max-height:70vh; border-radius:8px;">`;
-                            }
-                        });
-
-                        thumbnailsContainer.appendChild(thumb);
-                    });
-
-                    // --- 5) Modalı aç ---
-                    modal.classList.remove('hidden');
-                });
-            });
-
-            document.querySelector('.close-modal').addEventListener('click', () => {
-                document.getElementById('project-modal').classList.add('hidden');
-            });
-
-            window.addEventListener('click', (e) => {
-                const modal = document.getElementById('project-modal');
-                if (e.target === modal) {
-                    modal.classList.add('hidden');
-                }
-            });
-
-
-
-            // Modal kapatma
-            document.querySelector('.close-modal').addEventListener('click', () => {
-                document.getElementById('project-modal').classList.add('hidden');
-            });
-
-            window.addEventListener('click', (e) => {
-                const modal = document.getElementById('project-modal');
-                if (e.target === modal) {
-                    modal.classList.add('hidden');
-                }
-            });
-
-
-            document.querySelector('.close-modal').addEventListener('click', () => {
-                document.getElementById('project-modal').classList.add('hidden');
-            });
-
-            window.addEventListener('click', (e) => {
-                const modal = document.getElementById('project-modal');
-                if (e.target === modal) {
-                    modal.classList.add('hidden');
-                }
-            });
-        </script>
-
-
-    </section>
-
-
-
-    <section id="experience" class="Experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <ul class="experience-list">
-
-                <li>
-                    <strong>Unity Developer</strong> – TURK AI (Jan 2025 – Present)
-                    <p>
-                        Led the development of the “Synthetic Visual Data Generation for AI Training” project after
-                        completing
-                        multidisciplinary technical training. Created realistic 3D environments in Unity to produce
-                        synthetic video
-                        data for training computer vision models. Focused on performance optimization (terrain
-                        generation, shader
-                        tuning, post-processing) and developed custom Unity and Python tools for automated data
-                        generation, stream
-                        synchronization, and efficient output handling.
-                    </p>
-                </li>
-
-                <li>
-                    <strong>Game Developer</strong> – Adeline Games (Oct 2022 – Dec 2022)
-                    <p>
-                        Built a strong understanding of clean code practices and scalable game architecture. Participated
-                        in the
-                        development of four projects, including one small and three medium-scale games, contributing to
-                        various aspects
-                        such as game play mechanics, UI, and performance optimization.
-                    </p>
-                </li>
-
-                <li>
-                    <strong>Scholar</strong> – Google Game & Application Academy (Dec 2022 – Jul 2023)
-                    <p>
-                        Completed an intensive training program focused on Unity, mobile game development, and design
-                        thinking. Collaborated in team projects and participated in GameJam events.
-                    </p>
-                </li>
-
-                <li>
-                    <strong>Civil Engineering Intern</strong> – Kesit Müteahhitlik, Gaziantep (Jul 2021 – Aug 2021)
-                    <p>
-                        Worked as a Civil Engineering Intern at a large-scale commercial complex, supporting quality
-                        control engineering
-                        and site inspections.
-                    </p>
-                </li>
-
-                <li>
-                    <strong>Civil Engineering Intern</strong> – Zemarteknik, Ankara (Jul 2019 – Aug 2019)
-                    <p>
-                        Completed an internship at ZemarTeknik (Ankara), assisting with quantity surveying and cost
-                        estimation tasks
-                        in a civil engineering office.
-                    </p>
-                </li>
-
-                <li>
-                    <strong>Lab Assistant (Volunteer)</strong> – Selka Beton, Eskişehir (Sep 2018)
-                    <p>
-                        Volunteered as a laboratory assistant at a cement factory, supporting material testing and
-                        quality control
-                        processes.
-                    </p>
-                </li>
-
-            </ul>
-        </div>
-    </section>
-
-
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-
-            <div class="skills-grid">
-                <div>
-                    <h3>Software</h3>
-                    <ul>
-                        <li>Unity (Advanced)</li>
-                        <li>C# (Advanced)</li>
-                        <li>C++</li>
-                        <li>Matlab</li>
-                        <li>Python</li>
-                        <li>AutoCAD</li>
-                        <li>SAP2000</li>
-                        <li>GitHub</li>
-                    </ul>
-                </div>
-
-
-
-                <div>
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Game Develop</li>
-                        <li>Game Design</li>
-                        <li>Project Management</li>
-                        <li>Agile Project Management</li>
-                        <li>Bill of Quantities</li>
-                        <li>Engineering Surveying</li>
-
-
-                    </ul>
-                </div>
-            </div>
+            <div class="gallery-grid" id="gallery-grid"></div>
         </div>
     </section>
 
 
 
-    <section id="certificates" class="section">
+
+
+
+    <!-- Certificates Section -->
+    <section id="certificates-panel" class="content-panel hidden">
         <div class="container">
             <h2 class="section-title">Certificates</h2>
-            <div class="gallery-grid">
-
-
+            <ul class="certificate-list">
                 <a href="https://www.udemy.com/certificate/UC-f7345654-d6be-4e47-bacd-4e83c01c10c7/"
-                   class="gallery-item certificate-item" target="_blank">
+                    class="gallery-item certificate-item" target="_blank">
                     <div class="text-placeholder">
-                        Procedural Terrain Generation with Unity<br>Feb 2025 <br> <br>Pete Jepson (Udemy)
+                        Procedural Terrain Generation with Unity<br>Feb 2025 <br>Pete Jepson (Udemy)
                     </div>
                     <div class="overlay">
 
@@ -695,9 +172,9 @@
 
 
                 <a href="https://www.udemy.com/certificate/UC-3dc1550b-b796-4994-a9b4-f714386e2808/"
-                   class="gallery-item certificate-item" target="_blank">
+                    class="gallery-item certificate-item" target="_blank">
                     <div class="text-placeholder">
-                        Unity Environment Design<br>Jan 2025 <br> <br>Penny de Byl, Penny Holistic3D (Udemy)
+                        Unity Environment Design<br>Jan 2025 <br>Penny de Byl, Penny Holistic3D (Udemy)
                     </div>
 
                     <div class="overlay">
@@ -706,11 +183,11 @@
                     </div>
 
                 </a>
-                <a href="https://verified.sertifier.com/en/verify/43076692580595/"
-                   class="gallery-item certificate-item" target="_blank">
+                <a href="https://verified.sertifier.com/en/verify/43076692580595/" class="gallery-item certificate-item"
+                    target="_blank">
 
                     <div class="text-placeholder">
-                        Game and Application Academy Graduation Certificate<br>Aug 2023 <br> <br>Google Game and
+                        Game and Application Academy Graduation Certificate<br>Aug 2023 <br>Google Game and
                         Application Academy
                     </div>
 
@@ -723,7 +200,7 @@
 
 
                 <a href="https://coursera.org/share/4862732af2c7d1d197959725f21c396f"
-                   class="gallery-item certificate-item" target="_blank">
+                    class="gallery-item certificate-item" target="_blank">
 
 
 
@@ -731,7 +208,7 @@
                         Graduation Project: Project Management
                         in the Real World To apply<br>July 2023
 
-                        <br> <br>Coursera
+                        <br>Coursera
                     </div>
 
                     <div class="overlay">
@@ -742,10 +219,10 @@
 
                 </a>
                 <a href="https://coursera.org/share/023d0ddbe08b3307a5acb907e4eb3389"
-                   class="gallery-item certificate-item" target="_blank">
+                    class="gallery-item certificate-item" target="_blank">
 
                     <div class="text-placeholder">
-                        Agile Project Management<br>June 2023 <br> <br>Coursera
+                        Agile Project Management<br>June 2023 <br>Coursera
                     </div>
                     <div class="overlay">
 
@@ -755,10 +232,10 @@
                 </a>
 
                 <a href="https://coursera.org/share/d3af0423ad799533e792f6fc4d25a7cb"
-                   class="gallery-item certificate-item" target="_blank">
+                    class="gallery-item certificate-item" target="_blank">
 
                     <div class="text-placeholder">
-                        Executing the Project: Bringing the Project to Life<br>May 2023 <br>
+                        Executing the Project: Bringing the Project to Life<br>May 2023
                         <br>Coursera
                     </div>
                     <div class="overlay">
@@ -769,10 +246,10 @@
 
 
                 <a href="https://coursera.org/share/d3af0423ad799533e792f6fc4d25a7cb"
-                   class="gallery-item certificate-item" target="_blank">
+                    class="gallery-item certificate-item" target="_blank">
 
                     <div class="text-placeholder">
-                        Project Planning: Bringing Everything Together<br>Apr 2023 <br>
+                        Project Planning: Bringing Everything Together<br>Apr 2023
                         <br>Coursera
                     </div>
                     <div class="overlay">
@@ -782,11 +259,12 @@
                 </a>
 
 
-                <a href="https://verified.sertifier.com/en/verify/06501548519885" class="gallery-item certificate-item" target="_blank">
+                <a href="https://verified.sertifier.com/en/verify/06501548519885" class="gallery-item certificate-item"
+                    target="_blank">
 
                     <div class="text-placeholder">
                         Game and Application Academy
-                        Game Jam Participation Certificate<br>Apr 2023 <br> <br>Google Game
+                        Game Jam Participation Certificate<br>Apr 2023 <br>Google Game
                         and Application Academy
                     </div>
                     <div class="overlay">
@@ -797,11 +275,11 @@
                 </a>
 
                 <a href="https://www.coursera.org/account/accomplishments/certificate/LKDLFCTVNBYS"
-                   class="gallery-item certificate-item" target="_blank">
+                    class="gallery-item certificate-item" target="_blank">
 
                     <div class="text-placeholder">
                         Starting the Project: Stepping into the Project
-                        Successfully<br>Mar 2023 <br> <br>Coursera
+                        Successfully<br>Mar 2023 <br>Coursera
                     </div>
                     <div class="overlay">
 
@@ -815,107 +293,404 @@
                     gallery-item certificate-item" target="_blank">
 
                     <div class="text-placeholder">
-                        Project Management Fundamental<br>Jan 2023 <br> <br>Coursera
+                        Project Management Fundamental<br>Jan 2023 <br>Coursera
                     </div>
                     <div class="overlay">
 
 
                     </div>
                 </a>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-    </section>
-    <section id="contact" class="section">
-        <div class="container contact">
-            <h2 class="section-title">Contact</h2>
-
-            <div class="about-grid">
-
-
-                <a href="http://www.linkedin.com/in/samed-bekmez-343425153" class="about-btn" target="_blank">
-                    <img src="img/logos/LI-In-Bug.png" alt="LinkedIn" />
-
-                </a>
-
-                <a href="https://github.com/sambekthejester" class="about-btn" target="_blank">
-                    <img src="img/logos/GitHub-Mark-ea2971cee799.png" alt="GitHub" />
-
-                </a>
-
-                <a href="mailto:hbekmez81@gmail.com" class="about-btn no-link" target="_blank">
-
-                    hbekmez81@gmail.com
-                </a>
-
-                <div class="about-btn no-link">
-                    +90 507 490 9598
-
-
-                </div>
-            </div>
-
-            <form action="https://getform.io/f/agdpmnmb" method="POST" class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required />
-                <input type="email" name="email" placeholder="Your Email" required />
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn-small">Send Message</button>
-            </form>
-
+            </ul>
         </div>
     </section>
 
-    <footer>
+    <!-- Skills Section -->
+    <section id="skills-panel" class="content-panel hidden">
         <div class="container">
-            <p>&copy; 2025 Samed Bekmez. All rights reserved.</p>
+            <h2 class="section-title">Skills</h2>
+
+
+
+
+
+
+
+
+
+            <div class="skills-wrapper">
+                <ul>
+                    <li>Unity</li>
+                    <li>C#</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>Matlab</li>
+                    <li>AutoCAD</li>
+                    <li>SAP2000</li>
+                    <li>GitHub</li>
+                    <li>Game Develop</li>
+                    <li>Game Design</li>
+                    <li>Gameplay Programming</li>
+                    <li>Project Management</li>
+                    <li>Agile Project Management</li>
+                    <li>Engineering Surveying</li>
+                    <li>Bill of Quantities</li>
+                </ul>
+            </div>
+
+
         </div>
-    </footer>
+    </section>
+
+    </div>
+    </main>
+
+
+
+
+
+
+
+    <!-- MODAL STRUCTURE -->
+    <div id="project-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+
 
     <script>
-        const mobileMenu = document.getElementById("mobile-menu");
-        const navLinks = document.querySelector(".nav-links");
-        const themeToggle = document.getElementById("theme-toggle");
+        const projectMedia = {
+            project1: {
+                title: "Synthetic Visual Data Generation",
+                description: "Designed realistic virtual scenarios within the Unity engine to support computer vision model training.",
+                github: "https://github.com/sambekthejester/TerrainGeneration",
+                videos: [
+                    "img/Realistic/iter_1.mp4",
+                    "img/Realistic/iter_1_box.mp4",
+                    "img/Realistic/iter_5 (withHorse).mp4",
+                    "img/Realistic/iter_5_box.mp4"
+                ],
+                images: []
+            },
+            project2: {
+                title: "Cube Runner Merger",
+                description: "Available on Google Play. A hypercasual merge-runner game where players combine cubes and navigate obstacles.",
+                github: "https://github.com/sambekthejester/Cube_Runner_Merger",  // ← buraya
 
-        mobileMenu.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-        });
+                images: [
 
-        themeToggle.addEventListener("click", () => {
-            document.body.classList.toggle("light-theme");
-        });
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const sections = document.querySelectorAll("section");
-            const navLinks = document.querySelectorAll(".nav-links li a");
+                    "img/Cube_Runner_Merger/photo_2.jpg",
+                    "img/Cube_Runner_Merger/photo_3.jpg",
+                    "img/Cube_Runner_Merger/photo_4.jpg",
+                    "img/Cube_Runner_Merger/photo_5.jpg",
+                    "img/Cube_Runner_Merger/photo_6.jpg",
+                    "img/Cube_Runner_Merger/photo_7.jpg",
+                    "img/Cube_Runner_Merger/photo_8.jpg",
+                    "img/Cube_Runner_Merger/photo_9.jpg",
+                    "img/Cube_Runner_Merger/photo_10.jpg",
+                    "img/Cube_Runner_Merger/photo_11.jpg"
+                ],
+                videos: []
+            },
+            project3: {
+                title: "Akademi U14 Gamejam",
+                description: "Google Game & App Academy Gamejam submission: Arcanum.",
+                github: "https://github.com/sambekthejester/Bootcamp_U17",  // ← buraya
 
-            window.addEventListener("scroll", () => {
-                let current = "";
+                videos: ["img/Akademi-U14-Gamejam/arcanum.mp4"],
+                images: []
+            },
+            project4: {
+                title: "Runner",
+                description: "A basic runner mechanic demo developed as an exercise.",
 
-                sections.forEach((section) => {
-                    const sectionTop = section.offsetTop - 100;
-                    const sectionHeight = section.clientHeight;
-                    if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
-                        current = section.getAttribute("id");
+                github: "https://github.com/sambekthejester/Runner",  // ← buraya
+                images: ["img/Runner/thumb.JPG"],
+                videos: ["img/Runner/runner (2).mp4"]
+
+            },
+            project5: {
+                title: "Shot Merge Hypercasual",
+                description: "A prototype developed for a job interview. Includes shooting and merging mechanics.",
+
+                github: "https://github.com/sambekthejester/shot_merge_Hypercasual",  // ← buraya
+                videos: [],
+                images: [
+                    "img/shot_merge_Hypercasual/thumb.JPG",
+                    "img/shot_merge_Hypercasual/photo_1.jpg",
+                    "img/shot_merge_Hypercasual/photo_2.jpg",
+                    "img/shot_merge_Hypercasual/photo_3.jpg",
+                    "img/shot_merge_Hypercasual/photo_4.jpg",
+                    "img/shot_merge_Hypercasual/photo_5.jpg",
+                    "img/shot_merge_Hypercasual/photo_6.jpg",
+                    "img/shot_merge_Hypercasual/photo_7.jpg"
+                ]
+            },
+            project6: {
+                title: "Adventure Platformer",
+                description: "A 2D platformer exercise focused on character movement, environment and game flow.",
+                github: "https://github.com/sambekthejester/2d_adventure_platformer",  // ← buraya
+
+                images: ["img/2d_adventure_platformer/thumb.JPG"],
+                videos: [
+
+                    "img/2d_adventure_platformer/movie_001 (3).mp4",
+
+                    "img/2d_adventure_platformer/movie_002 (1).mp4",
+
+                    "img/2d_adventure_platformer/movie_003 (1).mp4"
+                ]
+
+            },
+            project7: {
+                title: "Platformer",
+                description: "A platformer prototype with level design and obstacle mechanics.",
+
+                github: "https://github.com/sambekthejester/2d_platformer",  // ← buraya
+                images: ["img/2d_platformer/thumb.JPG", "img/2d_platformer/2d_platformer.png"],
+                videos: [
+
+                    "img/2d_platformer/2d_platformer_1.mp4",
+
+                    "img/2d_platformer/2d_platformer_2.mp4",
+
+                    "img/2d_platformer/2d_platformer_3.mp4",
+
+                    "img/2d_platformer/2d_platformer_4.mp4",
+
+                    "img/2d_platformer/2d_platformer_5.mp4"
+                ]
+            },
+            project8: {
+                title: "Basic Arcade",
+                description: "A basic arcade-style 2D game exercise including shooting and scoring.",
+
+                github: "https://github.com/sambekthejester/2d_basic_arcade",  // ← buraya
+                images: [
+                    "img/2d_basic_arcade/thumb.JPG",
+                    "img/2d_basic_arcade/2d_basic_arcade_2.png",
+                    "img/2d_basic_arcade/2d_basic_arcade_1.png",
+
+
+                    "img/2d_basic_arcade/2d_basic_arcade_3.png"],
+                videos: ["img/2d_basic_arcade/2d_basic_arcade.mp4"]
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        const modal = document.getElementById("project-modal");
+        const modalBody = document.getElementById("modal-body");
+
+        document.querySelectorAll("[data-project]").forEach(item => {
+            item.addEventListener("click", () => {
+                const key = item.dataset.project;
+                const project = projectMedia[key];
+                if (!project) return;
+
+                const allMedia = [...(project.videos || []), ...(project.images || [])];
+
+                modalBody.innerHTML = `
+      <h3 style="text-align:center;">${project.title || "Project"}</h3>
+      ${project.github ? `
+        <div style="text-align:center; margin: 10px 0;">
+          <a href="${project.github}" target="_blank" style="text-decoration:none; color:#0077cc;">
+            🔗 GitHub Repository
+          </a>
+        </div>
+      ` : ""}
+      <p style="text-align:center;">${project.description || ""}</p>
+      <div id="main-display"></div>
+      <div id="thumbnails-container" style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:20px;"></div>
+    `;
+
+
+                // Create main media display
+                const mainDisplay = document.createElement("div");
+                mainDisplay.id = "main-display";
+                modalBody.appendChild(mainDisplay);
+
+
+
+                // Display first media as main
+                if (allMedia.length > 0) updateMainDisplay(allMedia[0]);
+
+                const thumbnailsContainer = modalBody.querySelector("#thumbnails-container");
+
+                allMedia.forEach(src => {
+                    const isVideo = src.endsWith(".mp4") || src.endsWith(".webm");
+                    const thumb = document.createElement(isVideo ? "video" : "img");
+                    thumb.src = src;
+                    if (isVideo) {
+                        thumb.muted = true;
+                        thumb.loop = true;
                     }
+                    thumb.style = `
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 6px;
+  `;
+                    thumb.addEventListener("click", () => updateMainDisplay(src));
+                    thumbnailsContainer.appendChild(thumb);
                 });
 
-                navLinks.forEach((link) => {
-                    link.classList.remove("active");
-                    if (link.getAttribute("href") === `#${current}`) {
-                        link.classList.add("active");
-                    }
-                });
+                modal.classList.remove("hidden");
             });
         });
+
+
+
+        // Close logic
+        document.querySelector(".close-modal").addEventListener("click", () => {
+            modal.classList.add("hidden");
+        });
+
+        modal.addEventListener("click", e => {
+            if (e.target === modal) {
+                modal.classList.add("hidden");
+            }
+        });
+
     </script>
+
+    <script>
+
+
+        // Tab switching
+        document.querySelectorAll(".tab-button").forEach(button => {
+            button.addEventListener("click", () => {
+                document.querySelectorAll(".content-panel").forEach(panel => panel.classList.add("hidden"));
+                document.querySelectorAll(".tab-button").forEach(btn => btn.classList.remove("active"));
+                document.getElementById(button.dataset.target).classList.remove("hidden");
+                button.classList.add("active");
+            });
+        });
+
+        // Init default tab
+        document.querySelector('[data-target="projects-panel"]').click();
+
+
+        const projectGrid = document.getElementById("gallery-grid");
+
+        Object.entries(projectMedia).forEach(([key, project]) => {
+            if (["project1", "project2", "project3"].includes(key)) return;
+
+            const card = document.createElement("div");
+            card.className = "project-card gallery-item"; // DOĞRU
+
+
+
+            card.setAttribute("data-project", key);
+            card.innerHTML = `
+          <h3>${project.title || "Untitled Project"}</h3>
+          <p>${project.description || "No description available."}</p>
+          <span class="view-details">View Details</span>
+        `;
+
+            // Tıklama olayı - modal aç
+            card.addEventListener("click", () => openProjectModal(key));
+            projectGrid.appendChild(card);
+        });
+
+
+        // Modal kapatma
+        document.querySelector(".close-modal").addEventListener("click", () => {
+            document.getElementById("project-modal").classList.add("hidden");
+        });
+
+        document.getElementById("project-modal").addEventListener("click", (e) => {
+            if (e.target.id === "project-modal") {
+                document.getElementById("project-modal").classList.add("hidden");
+            }
+        });
+
+
+
+
+
+
+        function openProjectModal(key) {
+            const project = projectMedia[key];
+            const modal = document.getElementById("project-modal");
+            const modalBody = document.getElementById("modal-body");
+
+            const allMedia = [...(project.videos || []), ...(project.images || [])];
+
+            modalBody.innerHTML = `
+        <h3 style="text-align:center;">${project.title || "Project"}</h3>
+        ${project.github ? `
+          <div style="text-align:center; margin: 10px 0;">
+            <a href="${project.github}" target="_blank" style="text-decoration:none; color:#0077cc;">
+              🔗 GitHub Repository
+            </a>
+          </div>` : ""}
+        <p style="text-align:center;">${project.description || ""}</p>
+        <div id="main-display"></div>
+        <div id="thumbnails-container" style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:20px;"></div>
+      `;
+
+            const mainDisplay = modalBody.querySelector("#main-display");
+            const thumbnailsContainer = modalBody.querySelector("#thumbnails-container");
+
+            if (allMedia.length > 0) updateMainDisplay(allMedia[0]);
+
+            allMedia.forEach(src => {
+                const isVideo = src.endsWith(".mp4");
+                const thumb = document.createElement(isVideo ? "video" : "img");
+                thumb.src = src;
+                if (isVideo) {
+                    thumb.muted = true;
+                    thumb.loop = true;
+                }
+                thumb.classList.add("thumb");
+                thumb.style.cssText = "width:100px;height:70px;object-fit:cover;cursor:pointer;border-radius:6px;";
+                thumb.addEventListener("click", () => updateMainDisplay(src));
+                thumbnailsContainer.appendChild(thumb);
+            });
+
+            modal.classList.remove("hidden");
+        }
+
+        function updateMainDisplay(src) {
+            const container = document.getElementById("main-display");
+            container.innerHTML = "";
+            if (src.endsWith(".mp4")) {
+                const video = document.createElement("video");
+                video.src = src;
+                video.controls = true;
+                video.autoplay = true;
+                video.muted = true;
+                video.style.cssText = "width:100%;max-height:70vh;border-radius:8px;";
+                container.appendChild(video);
+            } else {
+                const img = document.createElement("img");
+                img.src = src;
+                img.alt = "Media";
+                img.style.cssText = "width:100%;max-height:70vh;border-radius:8px;";
+                container.appendChild(img);
+            }
+        }
+    </script>
+
 
 
 </body>
