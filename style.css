@@ -443,6 +443,27 @@ body {
   margin-top: 1rem; /* üstten biraz nefes alanı da istersen */
  
 }
+.download-cv {
+  display: inline-block;
+  padding: 0.7rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.download-cv:hover,
+.download-cv:focus {
+  background-color: var(--accent);
+  color: var(--bg-color);
+}
+
+
 
 
 
